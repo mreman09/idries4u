@@ -1,0 +1,21 @@
+package model;
+
+import controller.UserRequest;
+
+import java.util.Random;
+
+
+public class ArrayGenerator {
+    static Random rand = new Random();
+
+    public static int[] generator(int x){
+        int[] numbers = new int[UserRequest.userInput];
+        for (int i = 0; i< numbers.length; i++){
+            numbers[i] = rand.nextInt(100000);
+        }
+        //int[] array = numbers;
+        return numbers;
+    }
+}
+
+
